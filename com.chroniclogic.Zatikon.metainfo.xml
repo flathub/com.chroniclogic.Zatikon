@@ -8,7 +8,7 @@
   <metadata_license>FSFAP</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
 
-  <url type="homepage">https://github.com/zatikon</url>
+  <url type="homepage">https://github.com/zatikon/zatikon</url>
   <icon type="remote">https://raw.githubusercontent.com/zatikon/zatikon-static/main/icon.png</icon>
 
   <supports>
@@ -53,6 +53,11 @@
 
 
   <releases>
+    <release version="1.1.0" date="2023-07-24">
+      <description>
+        <p>Zatikon is now FOSS! Source code is available AGPL3.0-licensed on GitHub.</p>
+      </description>
+    </release>
     <release version="1.0.99" date="2023-07-24">
       <description>
         <p>First release on Flathub!</p>
