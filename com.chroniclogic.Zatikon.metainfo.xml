@@ -4,16 +4,25 @@
 
   <name>Zatikon</name>
   <summary>Chess-like, fantasy game of conquering the enemy's castle</summary>
+  <developer_name>ChronicLogic</developer_name>
 
   <metadata_license>FSFAP</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
 
   <url type="homepage">https://github.com/zatikon/zatikon</url>
+  <url type="bugtracker">https://github.com/zatikon/zatikon/issues</url>
+  <url type="vcs-browser">https://github.com/zatikon/zatikon</url>
 
   <supports>
     <control>pointing</control>
     <control>keyboard</control>
   </supports>
+
+  <categories>
+    <category>Game</category>
+    <category>StrategyGame</category>
+    <category>BoardGame</category>
+  </categories>
 
   <description>
     <p>
