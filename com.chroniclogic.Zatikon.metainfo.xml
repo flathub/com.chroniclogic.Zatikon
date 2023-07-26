@@ -61,6 +61,11 @@
 
 
   <releases>
+    <release version="1.1.2" date="2023-07-26">
+      <description>
+        <p>Made games with AI significantly easier.</p>
+      </description>
+    </release>
     <release version="1.1.1" date="2023-07-25">
       <description>
         <p>Fixed an issue where all singleplayer games were tutorial games.</p>
