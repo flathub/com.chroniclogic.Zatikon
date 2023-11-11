@@ -61,6 +61,17 @@
 
 
   <releases>
+    <release version="1.1.3" date="2023-11-11">
+      <description>
+        <ul>
+          <li>security improvements</li>
+          <li>browser-starting code fixed</li>
+          <li>logging is more consistent</li>
+          <li>skippable tutorial</li>
+          <li>running the standalone client uses server thread instead of server process</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.2" date="2023-07-26">
       <description>
         <p>Made games with AI significantly easier.</p>
