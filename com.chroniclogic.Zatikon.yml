@@ -11,7 +11,8 @@ finish-args:
 - --env=JAVA_HOME=/app/jre
 - --share=ipc
 - --share=network
-- --socket=x11
+- --socket=fallback-x11
+- --socket=wayland
 - --socket=pulseaudio
 
 modules:
@@ -29,10 +30,10 @@ modules:
   - install -Dm644 zatikon.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/com.chroniclogic.Zatikon.png
   buildsystem: simple
   sources:
-  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.2/zatikon-1.1.2.jar
+  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.3/zatikon-1.1.3.jar
     type: file
     dest-filename: zatikon.jar
-    sha256: 99f42ddeaa3d786af83eb1a907ac973aa67da47afe64cdaa8a0981e5d4cd0ae5
+    sha256: 28a059ead28b0ffbb6ce5b41043122e9e647200942ea2dc95063368d2bfc1011
   - path: zatikon.sh
     type: file
   - path: com.chroniclogic.Zatikon.desktop
