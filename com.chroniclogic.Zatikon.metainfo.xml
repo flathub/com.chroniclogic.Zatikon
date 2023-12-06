@@ -61,6 +61,14 @@
 
 
   <releases>
+    <release version="1.1.4" date="2023-12-07">
+      <description>
+        <ul>
+          <li>client config now uses TOML</li>
+          <li>password remembering added</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.3" date="2023-11-11">
       <description>
         <ul>
