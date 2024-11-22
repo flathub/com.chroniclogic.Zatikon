@@ -4,7 +4,9 @@
 
   <name>Zatikon</name>
   <summary>Chess-like, fantasy game of conquering the enemy's castle</summary>
-  <developer_name>ChronicLogic</developer_name>
+  <developer id="com.chroniclogic">
+    <name>ChronicLogic</name>
+  </developer>
 
   <metadata_license>FSFAP</metadata_license>
   <project_license>AGPL-3.0-or-later</project_license>
@@ -27,12 +29,14 @@
   <description>
     <p>
         Chess with less complex movement, and instead with:
-        <ul>
-            <li>new, engaging rules</li>
-            <li>tons of pieces to choose from</li>
-            <li>army-building metagame</li>
-            <li>magic!</li>
-        </ul>
+    </p>
+    <ul>
+        <li>new, engaging rules</li>
+        <li>tons of pieces to choose from</li>
+        <li>army-building metagame</li>
+        <li>magic!</li>
+    </ul>
+    <p>
         Zatikon offers online and local gameplay, so there's something in it for every kind of player!
     </p>
   </description>
@@ -61,6 +65,17 @@
 
 
   <releases>
+    <release version="1.1.5" date="2024-11-22">
+      <description>
+        <ul>
+          <li>single player game difficulty readjusted towards significantly easier</li>
+          <li>security fixes</li>
+          <li>buttons in the UI updated</li>
+          <li>random game and AI games made more fair</li>
+          <li>gameplay consistency fixes</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.4" date="2023-12-07">
       <description>
         <ul>

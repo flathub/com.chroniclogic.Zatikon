@@ -1,6 +1,6 @@
 id: com.chroniclogic.Zatikon
 runtime: org.freedesktop.Platform
-runtime-version: '22.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
 - org.freedesktop.Sdk.Extension.openjdk17
@@ -11,8 +11,7 @@ finish-args:
 - --env=JAVA_HOME=/app/jre
 - --share=ipc
 - --share=network
-- --socket=fallback-x11
-- --socket=wayland
+- --socket=x11
 - --socket=pulseaudio
 
 modules:
@@ -30,10 +29,10 @@ modules:
   - install -Dm644 zatikon.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/com.chroniclogic.Zatikon.png
   buildsystem: simple
   sources:
-  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.4/zatikon-1.1.4.jar
+  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.5/zatikon-1.1.5.jar
     type: file
     dest-filename: zatikon.jar
-    sha256: 440c3829b943fa822a442efdbf645b5fbe0ee98315492700ca9b6152dc605bcb
+    sha256: 695dfcd58306cd3fab2e52d5b0ba6542d6a88be6130f6322283703d560545445
   - path: zatikon.sh
     type: file
   - path: com.chroniclogic.Zatikon.desktop
