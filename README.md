@@ -15,3 +15,7 @@ flatpak run org.freedesktop.appstream.cli validate com.chroniclogic.Zatikon.meta
 
 desktop-file-validate com.chroniclogic.Zatikon.desktop
 ```
+
+# Flathub build status
+
+On update, you can check the status of the package at https://buildbot.flathub.org/#/
