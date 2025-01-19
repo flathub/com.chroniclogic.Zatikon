@@ -65,6 +65,16 @@
 
 
   <releases>
+    <release version="1.1.8" date="2025-01-19">
+      <description>
+        <ul>
+	  <li>Fixed hover on players showing the wrong stats</li>
+	  <li>Fixed new players not being saved</li>
+	  <li>Changed new player intro screen</li>
+	  <li>Fixed browser button in Linux</li>
+        </ul>
+      </description>
+    </release>
     <release version="1.1.7" date="2025-01-18">
       <description>
         <ul>

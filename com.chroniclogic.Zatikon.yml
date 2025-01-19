@@ -29,10 +29,10 @@ modules:
   - install -Dm644 zatikon.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/com.chroniclogic.Zatikon.png
   buildsystem: simple
   sources:
-  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.7/zatikon-1.1.7.jar
+  - url: https://github.com/zatikon/zatikon/releases/download/v1.1.8/zatikon-1.1.8.jar
     type: file
     dest-filename: zatikon.jar
-    sha256: a86061e6b0a7ac20e9a55d194a0ea9a6f391a4482495c907ec2dc0632962a16c
+    sha256: e517dcb2cec4e6375f330111873645dfceebd4d384506fe20ab2a16b3f9f5c23
   - path: zatikon.sh
     type: file
   - path: com.chroniclogic.Zatikon.desktop
