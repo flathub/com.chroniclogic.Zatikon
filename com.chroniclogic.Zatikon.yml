@@ -26,7 +26,7 @@ modules:
   - install -D zatikon.jar /app/bin/zatikon.jar
   - install -Dm644 com.chroniclogic.Zatikon.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}.desktop
   - install -Dm644 com.chroniclogic.Zatikon.metainfo.xml ${FLATPAK_DEST}/share/metainfo/${FLATPAK_ID}.metainfo.xml
-  - install -Dm644 zatikon.png ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/com.chroniclogic.Zatikon.png
+  - install -Dm644 ${FLATPAK_ID}.png -t ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/
   buildsystem: simple
   sources:
   - url: https://github.com/zatikon/zatikon/releases/download/v1.1.10/zatikon-1.1.10.jar
@@ -39,5 +39,5 @@ modules:
     type: file
   - path: com.chroniclogic.Zatikon.metainfo.xml
     type: file
-  - path: zatikon.png
-    type: file
+  - type: file
+    path: com.chroniclogic.Zatikon.png
