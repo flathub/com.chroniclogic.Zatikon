@@ -3,41 +3,41 @@ runtime: org.freedesktop.Platform
 runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-- org.freedesktop.Sdk.Extension.openjdk17
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: zatikon
 
 finish-args:
-- --env=PATH=/app/jre/bin:/usr/bin:/app/bin
-- --env=JAVA_HOME=/app/jre
-- --share=ipc
-- --share=network
-- --socket=x11
-- --socket=pulseaudio
+  - --env=PATH=/app/jre/bin:/usr/bin:/app/bin
+  - --env=JAVA_HOME=/app/jre
+  - --share=ipc
+  - --share=network
+  - --socket=x11
+  - --socket=pulseaudio
 
 modules:
-- name: OpenJDK17
-  build-commands:
-  - /usr/lib/sdk/openjdk17/install.sh
-  buildsystem: simple
+  - name: OpenJDK17
+    buildsystem: simple
+    build-commands:
+      - /usr/lib/sdk/openjdk17/install.sh
 
-- name: zatikon
-  build-commands:
-  - install -D zatikon.sh /app/bin/zatikon
-  - install -D zatikon.jar -t /app/bin/
-  - install -Dm644 ${FLATPAK_ID}.desktop -t ${FLATPAK_DEST}/share/applications/
-  - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
-  - install -Dm644 ${FLATPAK_ID}.png -t ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/
-  buildsystem: simple
-  sources:
-  - type: file
-    url: https://github.com/zatikon/zatikon/releases/download/v1.1.10/zatikon-1.1.10.jar
-    sha256: eb1a3a7602ca6e730b02e9beef69f3cc17fc53ee267d25cae9ea8748abc30216
-    dest-filename: zatikon.jar
-  - type: file
-    path: zatikon.sh
-  - type: file
-    path: com.chroniclogic.Zatikon.desktop
-  - type: file
-    path: com.chroniclogic.Zatikon.metainfo.xml
-  - type: file
-    path: com.chroniclogic.Zatikon.png
+  - name: zatikon
+    buildsystem: simple
+    build-commands:
+      - install -D zatikon.sh /app/bin/zatikon
+      - install -D zatikon.jar -t /app/bin/
+      - install -Dm644 ${FLATPAK_ID}.desktop -t ${FLATPAK_DEST}/share/applications/
+      - install -Dm644 ${FLATPAK_ID}.metainfo.xml -t ${FLATPAK_DEST}/share/metainfo/
+      - install -Dm644 ${FLATPAK_ID}.png -t ${FLATPAK_DEST}/share/icons/hicolor/128x128/apps/
+    sources:
+      - type: file
+        url: https://github.com/zatikon/zatikon/releases/download/v1.1.10/zatikon-1.1.10.jar
+        sha256: eb1a3a7602ca6e730b02e9beef69f3cc17fc53ee267d25cae9ea8748abc30216
+        dest-filename: zatikon.jar
+      - type: file
+        path: zatikon.sh
+      - type: file
+        path: com.chroniclogic.Zatikon.desktop
+      - type: file
+        path: com.chroniclogic.Zatikon.metainfo.xml
+      - type: file
+        path: com.chroniclogic.Zatikon.png
